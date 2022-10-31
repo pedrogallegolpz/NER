@@ -3,7 +3,11 @@ In this repository I will upload my researchs about NER: libraries, use cases, e
 
 ## Documents:
 #### NER_test.ipynb
-It is a notebook where I proposed a new complex method for testing NER performance. On the state of the arte in evaluation NER models, several alternatives are found. From the strictest method: an entity will be well predicted if and only if its string defines a single real entity (the predicted entity and the real entity are exactly the same). To the softest method: each entity will be considered as a set of tokens and those tokens will be strictly checked whether they belong to a real entity or not. 
+It is a notebook where I proposed a new complex method for testing NER performance. For testing, I used the datasets:
+ - [Wikiner](https://core.ac.uk/download/pdf/82128816.pdf), ([download here](https://metatext.io/datasets-list/ner-task))
+ - [CoNLL 2002](https://aclanthology.org/W02-2024.pdf)
+
+On the state of the arte in evaluation NER models, several alternatives are found. From the strictest method: an entity will be well predicted if and only if its string defines a single real entity (the predicted entity and the real entity are exactly the same). To the softest method: each entity will be considered as a set of tokens and those tokens will be strictly checked whether they belong to a real entity or not. 
 
 From here onwards, the "soft" evaluation will be used. Both detection and classification will be evaluated. The evaluation of the classification will be done on the tokens of the well detected entities, i.e. on the TP's of the detection.
 
